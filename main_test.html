@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>主內容區</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000; /* 黑色背景 */
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    
+    .outer-container {
+      background-color: #373737; /* 灰色區塊 */
+      margin: 150px 50px 50px 50px;
+      padding: 20px 40px 40px 40px;
+      border-radius: 10px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 240px); /* 固定 5 欄 */
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 250px;
+      height: 380px;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: #222;
+    }
+
+    .card img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+    .card-contect {
+      color: #fff;
+      margin: 30px;
+      font-size: 30pt;
+      text-align: center;
+    }
+
+    .ccc {
+    line-height: 15px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 10;
+    overflow: hidden;
+    width: 100%;
+    max-height: 34px;
+    padding: 3px;
+    background-color: #fff;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #34495e;
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    }
+    .con { 
+      top: 5px;
+      left: 5px;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      border-radius: 10px;
+      object-fit:cover; 
+    }
+    .con img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+    }
+    .card-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #313131;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* 📱 響應式設定 */
+    @media (max-width: 1200px) {
+      .card-grid {
+        grid-template-columns: repeat(3, 240px);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 240px);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .card-grid {
+        grid-template-columns: repeat(1, 240px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer-container">
+    <div class="card-contect"><img src="img/IMG_0851.jpg" width="35px" alt="">現在流行</div>
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="img/001.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>公園的神祕大叔拉開了褲襠?!</div>
+      </div>
+
+      <div class="card">
+        <img src="img/114514.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>獸性大發的前輩與昏睡紅茶</div>
+      </div>
+
+      <div class="card">
+        <img src="img/ave.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>樂團成員人格分裂!</div>
+      </div>
+
+      <div class="card">
+        <img src="img/eevee.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>嘿，你知道嗎?</div>
+      </div>
+
+      <div class="card">
+        <img src="img/曹操.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>你說有人妻?!</div>
+      </div>
+
+      <div class="card">
+        <img src="img/拉珠.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>在場的各位都是刀鞘</div>
+      </div>
+
+      <div class="card">
+        <img src="img/會員制.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>趕快端上來罷!</div>
+      </div>
+      
+      <div class="card">
+        <img src="img/nykd.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>拜託別點進來</div>
+      </div>
+      
+      <div class="card">
+        <img src="img/tung.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>通!通!通!傻乎惹!</div>
+      </div>
+      
+      <div class="card">
+        <img src="img/雷影.jpg" alt="圖片1">
+        <div class="card-text"><div class="con"><img src="img/china.png" alt=""></div>來進行抗打擊訓練囉~</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>我的網站</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #373737; /* 灰色區塊 */
+    
+    flex-wrap: wrap;
+  }
+
+  .left-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .search-box {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .search-box img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100vh - 60px);
+    border: none;
+  }
+</style>
+
+<header>
+  <div class="left-area">
+    <img src="img/logo_69.jpg" alt="Logo" class="logo">
+
+    <div class="search-box">
+      <input type="text" placeholder="搜尋...">
+      <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="Search Icon">
+    </div>
+  </div>
+    <div class="nav-links">
+      <a href="main_test.html" target="contentFrame">回首頁</a>
+      <a href="pricing.html" target="contentFrame">會員價格</a>
+      <a href="login.html" target="contentFrame">登入 / 登出</a>
+      <a href="about.html" target="contentFrame">網站介紹</a>
+      <a href="sitemap.html" target="contentFrame">網頁地圖</a>
+    </div>
+  </header>
+
+  <iframe name="contentFrame" src="main_test.html"></iframe>
+
+</body>
+</html>
+
